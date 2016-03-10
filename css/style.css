@@ -17,6 +17,15 @@
   margin: 30px;
 }
 
+.calc-wrapper header {
+  background: black;
+  color: white;
+}
+
+h1 {
+  padding: 5px 10px;
+}
+
 .btns-wrapper table {
   height: 400px;
 }
@@ -50,21 +59,5 @@ body .btns-wrapper table tr td {
 input[type='text'] {
   font-size: 22px;
   padding: 5px;
-}
-
-
-
-.operationType {
-  display: inline-block;
-  min-width: 50px;
-  text-align: center;
-  font-size: 22px;
-  font-weight: bold;
-}
-
-.tempValue {
-  display: inline-block;
-  min-width: 30px;
-  font-size: 22px;
-  font-weight: bold;
+  margin-left: 10px; 
 }
