@@ -14,12 +14,12 @@
     <div class="main-wrapper">
       <section class="calc-wrapper" ng-controller="calcCtrl">
         <header class="calc-header">
-          <h1>Калькулятор</h1>
+          <h1>Calculator</h1>
         </header>
         <h1>{{ totalValue }} {{ operationType }}</h1>
         <div class="input-field">
           <button ng-click="restart()" class="btn-lg btn-trash" type="button"><i class="glyphicon glyphicon-trash"></i></button>
-          <input type="text" value="{{ numString }}" placeholder="0" autocomplete="off" >
+          <input type="text" value="{{ numString }}" autocomplete="off" >
           <button ng-click="deleteLastChar()" class="btn-lg" type="button"><i class="glyphicon glyphicon-chevron-left"></i></button>
         </div>
         <div class="btns-wrapper">

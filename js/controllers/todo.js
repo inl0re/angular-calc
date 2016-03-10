@@ -58,7 +58,6 @@ calcModule.controller('calcCtrl', ['$scope', function($scope) {
       $scope.totalValue = 0;
     }
     $scope.numString = ($scope.numString + x).toString();
-
   }
 
   $scope.dotBtnPress = function() {
@@ -79,7 +78,11 @@ calcModule.controller('calcCtrl', ['$scope', function($scope) {
   }
 
   $scope.deleteLastChar = function() {
-    $scope.numString = $scope.numString.substr(0, $scope.numString.length - 1);
+    if ($scope.numString.length > 1) {
+      $scope.numString = $scope.numString.substr(0, $scope.numString.length - 1);
+    } else {
+      $scope.numString = 0;
+    }
   }
 
 // OPERATIONAL
