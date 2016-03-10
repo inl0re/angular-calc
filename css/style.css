@@ -1,0 +1,70 @@
+/* Project style file */
+* {
+  box-sizing: border-box;
+}
+
+.main-wrapper {
+  width: 600px;
+  margin: 0 auto;
+  background-color: #ccc;
+  border: 1px solid #000;
+}
+
+.calc-wrapper {
+  background-color: #fff;
+  margin: 0 auto;
+  height: 100%;
+  margin: 30px;
+}
+
+.btns-wrapper table {
+  height: 400px;
+}
+
+body .btns-wrapper table tr td {
+  width: 25%;
+  height: 25%;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btns-wrapper td:hover {
+  background: grey;
+}
+
+.btn-number {
+  background: white;
+}
+
+.btn-operation {
+  background: green;
+}
+
+.btn-trash {
+  float: right;
+}
+
+input[type='text'] {
+  font-size: 22px;
+  padding: 5px;
+}
+
+
+
+.operationType {
+  display: inline-block;
+  min-width: 50px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.tempValue {
+  display: inline-block;
+  min-width: 30px;
+  font-size: 22px;
+  font-weight: bold;
+}

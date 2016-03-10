@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css" charset="utf-8">
+    <link rel="stylesheet" href="css/fonts.css" charset="utf-8">
+    <link rel="stylesheet" href="css/custom.css" charset="utf-8">
+    <link rel="stylesheet" href="css/custom.css" charset="utf-8">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+    <title></title>
+  </head>
+  <body ng-app="calc">
+    <div class="main-wrapper">
+      <section class="calc-wrapper" ng-controller="calcCtrl">
+        <header class="calc-header">
+          <h1>Калькулятор</h1>
+        </header>
+        <div class="input-field">
+          <span class="tempValue">{{ tempValue }}</span>
+          <span class="operationType">{{ operationType }}</span>
+
+          <button ng-click="restart()" class="btn-lg btn-trash" type="button"><i class="glyphicon glyphicon-trash"></i></button>
+          <input type="text" value="{{ numString }}" placeholder="0" autocomplete="off" >
+        </div>
+        <div class="btns-wrapper">
+          <table class="table">
+            <tbody>
+              <tr>
+                <td ng-click="numBtnPress(7)" class="btn-number">7</td>
+                <td ng-click="numBtnPress(8)" class="btn-number">8</td>
+                <td ng-click="numBtnPress(9)" class="btn-number">9</td>
+                <td ng-click="operationBtnPress('/')"class="btn-operation">/</td>
+              </tr>
+              <tr>
+                <td ng-click="numBtnPress(4)" class="btn-number">4</td>
+                <td ng-click="numBtnPress(5)" class="btn-number">5</td>
+                <td ng-click="numBtnPress(6)" class="btn-number">6</td>
+                <td ng-click="operationBtnPress('*')"class="btn-operation">*</td>
+              </tr>
+              <tr>
+                <td ng-click="numBtnPress(1)" class="btn-number">1</td>
+                <td ng-click="numBtnPress(2)" class="btn-number">2</td>
+                <td ng-click="numBtnPress(3)" class="btn-number">3</td>
+                <td ng-click="operationBtnPress('-')"class="btn-operation">-</td>
+              </tr>
+              <tr>
+                <td ng-click="dotBtnPress()" class="btn-number">.</td>
+                <td ng-click="numBtnPress(0)" class="btn-number">0</td>
+                <td ng-click="calcBtnPress()" class="btn-operation">=</td>
+                <td ng-click="operationBtnPress('+')"class="btn-operation">+</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+    <!--  angular.js  -->
+    <script src="libs/angular/angular.min.js"></script>
+    <!--  MODULES  -->
+    <script src="js/app.js"></script>
+    <!--  CONTROLLERS  -->
+    <script src="js/controllers/todo.js"></script>
+    <!--  common.js  -->
+    <script src="js/common.js"></script>
+  </body>
+</html>
